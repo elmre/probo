@@ -26,9 +26,6 @@ import (
 )
 
 const (
-	// actionFileGet is probo.ActionFileGet. People who can read a task can
-	// download its private files through the existing file handler.
-	actionFileGet = "core:file:get"
 	// actionFileUpload is probo.ActionFileUpload. People who can create or
 	// edit a task can upload a file.
 	actionFileUpload = "core:file:upload"
@@ -43,7 +40,6 @@ var readActions = []string{
 	ActionTaskGet, ActionTaskList,
 	ActionTaskCommentGet, ActionTaskCommentList,
 	ActionTaskActivityGet, ActionTaskActivityList,
-	actionFileGet,
 }
 
 var writeActions = []string{
